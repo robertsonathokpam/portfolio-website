@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robertson Athokpam - Portfolio</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        .background-image {
+            background-image: url('https://d1fufvy4xao6k9.cloudfront.net/images/blog/posts/2024/01/screenshot_14.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 600px; /* Adjust height as needed */
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            margin-top: 20px;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            width: auto; /* Adjust width as needed */
+            max-width: 80%; /* Limit maximum width */
+            text-align: center;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="background-image">
+        <div class="overlay">
+            <img src="https://d1fufvy4xao6k9.cloudfront.net/images/blog/posts/2024/01/screenshot_14.jpg" alt="Robertson Athokpam" class="profile-pic">
+            <h1>Robertson Athokpam</h1>
+            <p>Sophomore at NIT Manipur, Graduating in 2027</p>
+            <p>Country: India, State: Manipur</p>
+            <p>Looking for Opportunities</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/robertson-athokpam-377497293/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/robertsonathokpam" target="_blank">GitHub</a>
+            <a href="https://x.com/RobertsonA25659" target="_blank">Twitter</a>
+            <p>Phone: +91-9366799608</p>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Robertson Athokpam, a sophomore at NIT Manipur. I am passionate about technology and always eager to learn new things. I am currently looking for opportunities to grow my skills and contribute to exciting projects.</p>
+    </section>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+            <div class="portfolio-item">
+                <img src="/images/project1.jpg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>A brief description of Project 1. This project showcases my skills in [relevant technology or domain].</p>
+                <a href="https://link-to-project1.com" target="_blank">View Project</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="/images/project2.jpg" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>A brief description of Project 2. This project showcases my skills in [relevant technology or domain].</p>
+                <a href="https://link-to-project2.com" target="_blank">View Project</a>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="/contact" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <!--<footer>
+        <p>&copy; 2024 Robertson Athokpam</p>
+    </footer>
+-->
+    <script src="/js/script.js"></script>
+</body>
+</html>
