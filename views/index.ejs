@@ -6,14 +6,47 @@
     <title>Robertson Athokpam - Portfolio</title>
     <link rel="stylesheet" href="/css/styles.css">
     <style>
+        .above-Header {
+            display: flex;
+        }
+        
+        header {
+            
+            position: fixed;
+            top: 0;
+            width: 100%; 
+            background-color: #333;
+            color: white;
+            z-index: 100;
+            transition: top 0.3s; 
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem;
+            margin: 0; 
+            width: 100%;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1rem;
+        }
+
         .background-image {
             background-image: url('https://d1fufvy4xao6k9.cloudfront.net/images/blog/posts/2024/01/screenshot_14.jpg');
             background-size: cover;
             background-position: center;
-            height: 600px; /* Adjust height as needed */
+            height: 600px; 
             position: relative;
             text-align: center;
             color: white;
+            margin-top: 60px; 
         }
 
         .overlay {
@@ -23,7 +56,7 @@
             transform: translate(-50%, -50%);
             width: 100%;
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            background-color: rgba(0, 0, 0, 0.5); 
         }
 
         .profile-pic {
@@ -41,8 +74,8 @@
             transform: translateX(-50%);
             background-color: rgba(0, 0, 0, 0.5);
             padding: 10px;
-            width: auto; /* Adjust width as needed */
-            max-width: 80%; /* Limit maximum width */
+            width: auto;
+            max-width: 80%;
             text-align: center;
         }
         
@@ -60,16 +93,18 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="above-Header">
+        <header id="header">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
     <section id="home" class="background-image">
         <div class="overlay">
             <img src="https://d1fufvy4xao6k9.cloudfront.net/images/blog/posts/2024/01/screenshot_14.jpg" alt="Robertson Athokpam" class="profile-pic">
@@ -122,7 +157,7 @@
     <!--<footer>
         <p>&copy; 2024 Robertson Athokpam</p>
     </footer>
--->
-    <script src="/js/script.js"></script>
+    -->
+</script src="../public/js/script.js">
 </body>
 </html>
